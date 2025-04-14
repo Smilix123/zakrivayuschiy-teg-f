@@ -13,4 +13,115 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  font-family: Inter-Variable;
+  align-items: center;
+}
+
+.header {
+  margin: 104px;
+}
+
+.main {
+  max-inline-size: 696px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  margin-block-end: 50px;
+}
+
+.header__box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 128px 120.5px;
+  background-color: #fff;
+  width: 100%;
+  text-transform: uppercase;
+  align-items: center;
+  font-family: PressStart2P;
+  border: 2px solid var(--Themes-mainColor, #000);
+}
+
+.header__title {
+  font-size: 65px;
+  font-weight: 400;
+}
+
+.header__text {
+  font-size: 23px;
+}
+
+.card {
+  background-color: #fff;
+  border: 2px solid var(--Themes-mainColor, #000);
+}
+
+.card__title {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 5px 10px;
+}
+
+.card__img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: right;
+}
+
+.card__box {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding: 25px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.card__buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin: 0 25px 25px 0;
+}
+
+.button {
+  background-color: #fff;
+}
+
+.button-heart {
+  border: none;
+}
+
+.button-like {
+  padding: 9px 17px;
+  font-family: PressStart2P;
+  line-height: 90%;
+  font-size: 14px;
+}
+
+.floppy {
+  padding: 15px 19px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 2px solid var(--Themes-mainColor, #000);
+  margin-block-end: 105px;
+}
+
+.floppy__img {
+  block-size: var(--floppy-size, 21px);
+  inline-size: var(--floppy-size, 21px);
+}
+
+.floppy__text {
+  font-family: PressStart2P;
+  font-size: 14px;
+  line-height: 90%;
 }
