@@ -104,6 +104,10 @@
   line-height: 21px;
 }
 
+.card__box p {
+  font-variation-settings: "wght" var(--main-text-weight, 400);
+}
+
 .card__buttons {
   display: flex;
   justify-content: flex-end;
@@ -143,7 +147,7 @@
   inline-size: var(--floppy-size, 21px);
 }
 
-.floppy__text {
+.button__text {
   font-family: var(--accent-font, "PressStart2P-Regular", fantasy);
   font-size: 14px;
   line-height: 90%;
