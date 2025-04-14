@@ -413,14 +413,39 @@
       </article>
     </main>
     <footer class="floppy">
-      <svg
-        class="floppy__img"
-        viewBox="0 0 21= 21"
-        xmlns="http://www.w3.org/2000/svg"
+      <button
+        class="button footer__button"
+        type="button"
+        onclick="window['footer__dialog'].showModal()"
+        aria-controls="footer__dialog"
       >
-        <use href="./svg/sprite.svg#floppy" />
-      </svg>
-      <span class="button__text">Сохранить на память</span>
+        <svg
+          class="floppy__img"
+          viewBox="0 0 21 21"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <use href="./svg/sprite.svg#floppy" />
+        </svg>
+
+        <span class="button__text">Сохранить на память</span>
+      </button>
+      <dialog id="footer__dialog" class="footer__dialog">
+        <svg
+          class="dialog__floppy"
+          viewBox="0 0 39 39"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <use href="./svg/sprite.svg#floppy" />
+        </svg>
+        <span class="dialog__text">Вставьте дискету, чтобы продолжить</span>
+        <button
+          class="dialog__button"
+          type="button"
+          onclick="window['footer__dialog'].close()"
+        >
+          ок
+        </button>
+      </dialog>
     </footer>
     <script src="./scripts/like.js"></script>
   </body>
