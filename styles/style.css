@@ -59,6 +59,7 @@
 }
 
 .card {
+  position: relative;
   border: 2px solid var(--Themes-mainColor, #000);
   background-color: #fff;
 }
@@ -67,6 +68,24 @@
   padding: 5px 10px;
   font-weight: 700;
   font-size: 18px;
+}
+
+.card__img-block {
+  position: relative;
+}
+
+.card__img-watermark {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  opacity: 0.5;
+  color: #000;
+  font-family: var(--accent-font, "PressStart2P-Regular", fantasy);
+  font-size: 14px;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--Themes-background, #fff);
+  mix-blend-mode: hard-light;
 }
 
 .card__img {
@@ -88,6 +107,7 @@
 .card__buttons {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   gap: 12px;
   margin: 0 25px 25px 0;
 }
@@ -96,11 +116,11 @@
   background-color: #fff;
 }
 
-.button-heart {
+.like-icon {
   border: none;
 }
 
-.button-like {
+.card__like-button {
   padding: 9px 17px;
   font-family: var(--accent-font, "PressStart2P-Regular", fantasy);
   font-size: 14px;
@@ -127,4 +147,10 @@
   font-family: var(--accent-font, "PressStart2P-Regular", fantasy);
   font-size: 14px;
   line-height: 90%;
+}
+
+@media (width <= 375px) {
+  .floppy {
+    flex-direction: column;
+  }
 }
