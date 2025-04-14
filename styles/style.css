@@ -11,13 +11,14 @@
 */
 
 .page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
   display: flex;
   flex-direction: column;
-  background-color: lightgray;
-  font-family: Inter-Variable;
   align-items: center;
+  font-family: var(--main-font, "Inter-Variable", sans-serif);
+  background-color: lightgray;
+  min-inline-size: 320px;
+  min-block-size: 100dvb;
+  font-variation-settings: "wght" var(--accent-text-weight, 700);
 }
 
 .header {
@@ -25,52 +26,54 @@
 }
 
 .main {
-  max-inline-size: 696px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
   align-items: center;
-  margin-block-end: 50px;
+  gap: var(--main-gap, 50px);
+  margin-block-end: var(--main-gap, 50px);
+  max-inline-size: 696px;
 }
 
 .header__box {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 128px 120.5px;
-  background-color: #fff;
-  width: 100%;
-  text-transform: uppercase;
   align-items: center;
-  font-family: PressStart2P;
+  gap: 20px;
+  width: 100%;
   border: 2px solid var(--Themes-mainColor, #000);
+  /*padding: 128px 120.5px;*/
+  padding-inline: clamp(0.875rem, -6.901rem + 33.1776vw, 7.53125rem);
+  padding-block: clamp(7.5rem, 6.9159rem + 2.4922vw, 8rem);
+  font-family: var(--accent-font, "PressStart2P-Regular", fantasy);
+  text-transform: uppercase;
+  background-color: #fff;
 }
 
 .header__title {
-  font-size: 65px;
   font-weight: 400;
+  font-size: clamp(3.0625rem, 1.8943rem + 4.9844vw, 4.0625rem);
 }
 
 .header__text {
-  font-size: 23px;
+  font-size: clamp(0.875rem, 0.2179rem + 2.8037vw, 1.4375rem);
 }
 
 .card {
-  background-color: #fff;
   border: 2px solid var(--Themes-mainColor, #000);
+  background-color: #fff;
 }
 
 .card__title {
-  font-size: 18px;
-  font-weight: 700;
   padding: 5px 10px;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .card__img {
   width: 100%;
-  aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: right;
+  aspect-ratio: 1 / 1;
 }
 
 .card__box {
@@ -99,20 +102,20 @@
 
 .button-like {
   padding: 9px 17px;
-  font-family: PressStart2P;
-  line-height: 90%;
+  font-family: var(--accent-font, "PressStart2P-Regular", fantasy);
   font-size: 14px;
+  line-height: 90%;
 }
 
 .floppy {
-  padding: 15px 19px;
   display: flex;
-  gap: 8px;
-  align-items: center;
   justify-content: center;
-  background-color: #fff;
-  border: 2px solid var(--Themes-mainColor, #000);
+  align-items: center;
+  gap: 8px;
   margin-block-end: 105px;
+  border: 2px solid var(--Themes-mainColor, #000);
+  padding: 15px 19px;
+  background-color: #fff;
 }
 
 .floppy__img {
@@ -121,7 +124,7 @@
 }
 
 .floppy__text {
-  font-family: PressStart2P;
+  font-family: var(--accent-font, "PressStart2P-Regular", fantasy);
   font-size: 14px;
   line-height: 90%;
 }
