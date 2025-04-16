@@ -1,6 +1,7 @@
 :root {
-  --main-font: "Inter-Variable", sans-serif;
-  --accent-font: "PressStart2P-Regular", fantasy;
+  --main-font: "Inter-Variable", Arial, Helvetica, sans-serif;
+  --accent-font: "PressStart2P-Regular", Arial, Helvetica, sans-serif;
+
   --main-text-weight: 400;
   --accent-text-weight: 700;
   --main-gap: 50px;
