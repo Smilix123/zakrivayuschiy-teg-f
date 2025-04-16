@@ -15,10 +15,12 @@
   flex-direction: column;
   align-items: center;
   font-family: var(--main-font, "Inter-Variable", sans-serif);
-  background-color: lightgray;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: "wght" var(--accent-text-weight, 700);
+  background-image: var(--gradient-right), var(--gradient-bottom), var(--gradient-saturation);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
@@ -76,6 +78,7 @@
 
 .card__img-watermark {
   position: absolute;
+  z-index: 1;
   top: 25px;
   right: 25px;
   opacity: 0.5;
@@ -86,6 +89,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--Themes-background, #fff);
   mix-blend-mode: hard-light;
+  text-shadow: 0 0 1px var(--color-outline, #fff);
 }
 
 .card__img {
@@ -93,6 +97,38 @@
   object-fit: cover;
   object-position: right;
   aspect-ratio: 1 / 1;
+}
+
+.filter_sepia {
+  filter: sepia(0.5);
+}
+
+.filter_hue-rotate {
+  filter: hue-rotate(0.5turn);
+}
+
+.filter_blur {
+  filter: blur(1.5px);
+}
+
+.filter_invert {
+  filter: invert(100%);
+}
+
+.filter_contrast {
+  filter: contrast(130%);
+}
+
+.filter_contrast-grayscale {
+  filter: grayscale(100%) contrast(100%);
+}
+
+.filter_brightness {
+  filter: brightness(50%);
+}
+
+.filter_saturate {
+  filter: saturate(200%);
 }
 
 .card__box {
@@ -116,11 +152,12 @@
 }
 
 .button {
-  background-color: #fff;
+  background-color: transparent;
 }
 
-.like-icon {
+.card__icon-button {
   border: none;
+  background-color: transparent;
 }
 
 .card__like-button {
@@ -128,6 +165,7 @@
   font-family: var(--accent-font, "PressStart2P-Regular", fantasy);
   font-size: 14px;
   line-height: 90%;
+  background-color: transparent;
 }
 
 .floppy {
@@ -202,10 +240,15 @@
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+  background-color: transparent;
 }
 
 @media (width <= 375px) {
   .floppy {
     flex-direction: column;
+  }
+  .floppy__img {
+    block-size: var(--floppy-size, 28px);
+    inline-size: var(--floppy-size, 28px);
   }
 }

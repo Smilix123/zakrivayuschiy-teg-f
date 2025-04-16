@@ -4,4 +4,16 @@
   --main-text-weight: 400;
   --accent-text-weight: 700;
   --main-gap: 50px;
+
+  --gradient-right: repeating-linear-gradient(
+    to right,
+    #d3d3d3 0 2px,
+    transparent 2px 4px
+  );
+  --gradient-bottom: repeating-linear-gradient(
+    to bottom,
+    #d3d3d3 0 2px,
+    transparent 2px 4px
+  );
+  --gradient-saturation: linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
