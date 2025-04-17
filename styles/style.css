@@ -167,11 +167,11 @@
 .card__icon-button {
   display: flex;
   align-items: center;
-  height: 36px;
   border: 2px solid transparent;
   padding: 0;
   background-color: inherit;
   transition: border 0.3s ease;
+  block-size: 36px;
 }
 
 .card__icon-button:focus-visible {
