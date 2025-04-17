@@ -78,8 +78,8 @@
 
 .card__title {
   padding: 4px 8px;
-  font-variation-settings: "wght" var(--accent-text-weight, 700);
   font-size: var(--main-font-size, 18px);
+  font-variation-settings: "wght" var(--accent-text-weight, 700);
 }
 
 .card__img-block {
@@ -98,9 +98,8 @@
   font-family: var(--accent-font, "PressStart2P-Regular", fantasy);
   font-size: var(--accent-font-size, 14px);
   text-transform: uppercase;
-  text-shadow: 0 0 1px var(--accent-color, #fff);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--accent-color, #fff);
+  text-shadow: -1px 0 var(--accent-font-stroke), 0 1px var(--accent-font-stroke),
+    1px 0 var(--accent-font-stroke), 0 -1px var(--accent-font-stroke);
   mix-blend-mode: hard-light;
 }
 
@@ -324,5 +323,16 @@
   .floppy__img {
     block-size: var(--floppy-size, 28px);
     inline-size: var(--floppy-size, 28px);
+  }
+}
+
+@supports (
+  (-webkit-text-stroke: 1px var(--accent-color, #fff)) or
+    (text-stroke: 1px var(--accent-color, #fff))
+) {
+  .card__img-watermark {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--accent-color, #fff);
+    text-stroke: 1px var(--accent-color, #fff);
   }
 }
