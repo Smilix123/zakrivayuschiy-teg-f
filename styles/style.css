@@ -62,7 +62,6 @@
 
 .card {
   position: relative;
-  border: 2px solid var(--Themes-mainColor, #000);
   background-color: #fff;
 }
 
@@ -74,6 +73,8 @@
 
 .card__img-block {
   position: relative;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
 }
 
 .card__img-watermark {
@@ -97,6 +98,7 @@
   object-fit: cover;
   object-position: right;
   aspect-ratio: 1 / 1;
+  display: block;
 }
 
 .filter_sepia {
@@ -148,7 +150,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 2px;
+  gap: 6px;
   margin: 0 25px 25px 0;
 }
 
