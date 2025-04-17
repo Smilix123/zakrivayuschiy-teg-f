@@ -21,11 +21,14 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: "wght" var(--accent-text-weight, 700);
-  inline-size: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
+}
+
+.section {
+  inline-size: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.75rem);
 }
 
 .header {
-  margin: 101px;
+  margin: 100px;
 }
 
 .main {
@@ -34,7 +37,6 @@
   align-items: center;
   gap: var(--main-gap, 50px);
   margin-block-end: var(--main-gap, 50px);
-  max-inline-size: 696px;
 }
 
 .header__box {
@@ -48,7 +50,6 @@
   font-family: var(--accent-font, "PressStart2P-Regular", fantasy);
   text-transform: uppercase;
   background-color: #fff;
-  inline-size: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
 }
 
 .header__title {
@@ -63,6 +64,7 @@
 .card {
   position: relative;
   background-color: #fff;
+  border: 2px solid #000;
 }
 
 .card__title {
@@ -151,7 +153,7 @@
   justify-content: flex-end;
   align-items: center;
   gap: 6px;
-  margin: 0 25px 25px 0;
+  margin: 2px 25px 27px 0;
 }
 
 .card__icon-button {
@@ -187,7 +189,6 @@
 
 .like-icon {
   width: 36px;
-  height: 29px;
   cursor: pointer;
 }
 
