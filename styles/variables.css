@@ -6,6 +6,8 @@
   --accent-text-weight: 700;
   --main-gap: 50px;
 
+  --inline-size-section: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+
   --gradient-right: repeating-linear-gradient(
     to right,
     #d3d3d3 0 2px,

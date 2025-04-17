@@ -24,7 +24,8 @@
 }
 
 .section {
-  inline-size: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.75rem);
+  inline-size: var(--inline-size-section);
+  
 }
 
 .header {
