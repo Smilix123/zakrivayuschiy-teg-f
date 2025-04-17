@@ -4,9 +4,24 @@
 
   --main-text-weight: 400;
   --accent-text-weight: 700;
+
+  --main-color: #000;
+  --accent-color: #fff;
+
   --main-gap: 50px;
+  --bg-color-section: #fff;
+
+  --animation-main-color: #000;
+  --animation-accent-color: #ff0000;
 
   --inline-size-section: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  --header--title-size: clamp(3.0625rem, 1.8943rem + 4.9844vw, 4.0625rem);
+  --header--text-size: clamp(0.875rem, 0.2179rem + 2.8037vw, 1.4375rem);
+
+  --main-font-size: 18px;
+  --accent-font-size: 14px;
+  --floppy-size: 21px;
+  --floppy-dialog-size: 39px;
 
   --gradient-right: repeating-linear-gradient(
     to right,
@@ -19,4 +34,10 @@
     transparent 2px 4px
   );
   --gradient-saturation: linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+}
+
+@media (width <= 375px) {
+  :root {
+    --floppy-size: 28px;
+  }
 }
