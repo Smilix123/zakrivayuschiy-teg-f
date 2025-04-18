@@ -56,8 +56,9 @@
           <p>Место для ваших воспоминаний о начале обучения.</p>
         </div>
         <div class="card__buttons">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="39"
               height="36"
@@ -89,7 +90,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button_effect">
+          <button class="card__like-button button_effect" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -116,8 +117,9 @@
           <p>Место для ваших воспоминаний о начале первого спринта.</p>
         </div>
         <div class="card__buttons">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="39"
               height="36"
@@ -149,7 +151,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button_effect">
+          <button class="card__like-button button_effect" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -174,8 +176,9 @@
           <p>Место для ваших воспоминаний об окончании первого спринта.</p>
         </div>
         <div class="card__buttons">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="39"
               height="36"
@@ -207,7 +210,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button_effect">
+          <button class="card__like-button button_effect" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -234,8 +237,9 @@
           <p>Место для ваших воспоминаний о начале второго спринта.</p>
         </div>
         <div class="card__buttons">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="39"
               height="36"
@@ -267,7 +271,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button_effect">
+          <button class="card__like-button button_effect" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -295,8 +299,9 @@
           <p>Место для ваших воспоминаний об окончании второго спринта.</p>
         </div>
         <div class="card__buttons">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="39"
               height="36"
@@ -328,7 +333,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button_effect">
+          <button class="card__like-button button_effect" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -353,8 +358,9 @@
           <p>Место для ваших воспоминаний о начале третьего спринта.</p>
         </div>
         <div class="card__buttons">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="39"
               height="36"
@@ -386,7 +392,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button_effect">
+          <button class="card__like-button button_effect" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -413,8 +419,9 @@
           <p>Место для ваших воспоминаний об окончании третьего спринта.</p>
         </div>
         <div class="card__buttons">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="39"
               height="36"
@@ -446,7 +453,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button_effect">
+          <button class="card__like-button button_effect" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -477,8 +484,9 @@
           </p>
         </div>
         <div class="card__buttons">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="39"
               height="36"
@@ -510,39 +518,39 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button_effect">
+          <button class="card__like-button button_effect" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </article>
-    </main>
-    <footer class="floppy">
-      <button
-        class="footer__button button_effect"
-        type="button"
-        onclick="window['footer__dialog'].showModal()"
-        aria-controls="footer__dialog"
-      >
-        <svg class="floppy__img" viewBox="0 0 40 40">
-          <use href="./svg/sprite.svg#floppy" />
-        </svg>
-
-        <span class="button__text">Сохранить на память</span>
-      </button>
-      <dialog id="footer__dialog" class="footer__dialog">
-        <svg class="dialog__floppy" viewBox="0 0 40 40">
-          <use href="./svg/sprite.svg#floppy" />
-        </svg>
-        <span class="dialog__text">Вставьте дискету, чтобы продолжить</span>
+      <div class="floppy">
         <button
-          class="dialog__button button_effect"
+          class="save__button button_effect"
           type="button"
-          onclick="window['footer__dialog'].close()"
+          onclick="window['save__dialog'].showModal()"
+          aria-controls="save__dialog"
         >
-          <span class="dialog__button-text">Ок</span>
+          <svg class="floppy__img" viewBox="0 0 40 40">
+            <use href="./svg/sprite.svg#floppy" />
+          </svg>
+
+          <span class="button__text">Сохранить на память</span>
         </button>
-      </dialog>
-    </footer>
+        <dialog id="save__dialog" class="save__dialog">
+          <svg class="dialog__floppy" viewBox="0 0 40 40">
+            <use href="./svg/sprite.svg#floppy" />
+          </svg>
+          <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+          <button
+            class="dialog__button button_effect"
+            type="button"
+            onclick="window['save__dialog'].close()"
+          >
+            <span class="dialog__button-text">Ок</span>
+          </button>
+        </dialog>
+      </div>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
