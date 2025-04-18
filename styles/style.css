@@ -93,7 +93,7 @@
 .card__img-watermark {
   position: absolute;
   top: 25px;
-  right: 25px;
+  right: clamp(0.75rem, 0.4639rem + 1.2207vw, 1.5625rem);
   z-index: 1;
   opacity: 0.5;
   color: var(--main-color, #000);
@@ -330,9 +330,6 @@
   .floppy__img {
     block-size: var(--floppy-size, 28px);
     inline-size: var(--floppy-size, 28px);
-  }
-  .card__img-watermark {
-    right: 12px;
   }
 }
 
