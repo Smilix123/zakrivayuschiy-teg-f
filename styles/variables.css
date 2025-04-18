@@ -1,6 +1,6 @@
 :root {
-  --main-font: "Inter-Variable", Arial, Helvetica, sans-serif;
-  --accent-font: "PressStart2P", Arial, Helvetica, sans-serif;
+  --main-font: "Inter-Variable", fantasy, Arial, Helvetica, sans-serif;
+  --accent-font: "PressStart2P", fantasy, Arial, Helvetica, sans-serif;
 
   --main-text-weight: 400;
   --accent-text-weight: 700;
