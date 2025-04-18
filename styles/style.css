@@ -323,8 +323,8 @@
   mix-blend-mode: difference;
 }
 
-@media (width <= 375px) {
-  .save_button {
+@media (width <= 376px) {
+  .save__button {
     flex-direction: column;
   }
   .floppy__img {
@@ -332,7 +332,7 @@
     inline-size: var(--floppy-size, 28px);
   }
   .card__img-watermark {
-    right: 15px;
+    right: 12px;
   }
 }
 

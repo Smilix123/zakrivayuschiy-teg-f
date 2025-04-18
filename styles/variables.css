@@ -37,7 +37,7 @@
   --gradient-saturation: linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
 
-@media (width <= 375px) {
+@media (width <= 376px) {
   :root {
     --floppy-size: 28px;
   }
